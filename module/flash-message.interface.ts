@@ -4,4 +4,5 @@ export interface FlashMessageInterface {
     cssClass: string;
     closeOnClick: boolean;
     showCloseBtn: boolean;
+    timer: number;
 }

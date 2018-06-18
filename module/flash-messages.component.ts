@@ -31,6 +31,7 @@ export class FlashMessagesComponent implements OnInit {
     constructor(private _flashMessagesService: FlashMessagesService, private _cdRef: ChangeDetectorRef) {
         this._flashMessagesService.show = this.show.bind(this);
         this._flashMessagesService.grayOut = this.grayOut.bind(this);
+        this._flashMessagesService.closeAll = this.closeAll.bind(this);
     }
 
     ngOnInit() {}
@@ -65,7 +66,10 @@ export class FlashMessagesComponent implements OnInit {
     }
 
     closeAll(): void {
-        this.messages = [];
+        this.messages.forEach(m => {
+            clearTimeout(m.timer);
+            this._remove(m);
+        })
     }
 
     alertClicked(message:FlashMessage): void {
