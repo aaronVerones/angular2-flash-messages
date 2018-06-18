@@ -2,6 +2,9 @@
 
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000)](http://opensource.org/licenses/MIT)
 
+-- FORKED FROM PAUL MOFF'S angular2-flash-messages -- 
+https://www.npmjs.com/package/angular2-flash-messages
+
 This is a simple module that provides component and service for showing flash messages.
 
 ## Requirements
