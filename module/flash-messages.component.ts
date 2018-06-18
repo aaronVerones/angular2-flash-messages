@@ -64,6 +64,10 @@ export class FlashMessagesComponent implements OnInit {
             this._cdRef.detectChanges();
     }
 
+    closeAll(): void {
+        this.messages = [];
+    }
+
     alertClicked(message:FlashMessage): void {
       if(message.closeOnClick){
         this.close(message);

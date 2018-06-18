@@ -31,7 +31,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/moff/angular2-flash-messages.git"
+    "url": "https://github.com/aaronVerones/angular2-flash-messages.git"
   },
   "license": "MIT",
   "peerDependencies": {
